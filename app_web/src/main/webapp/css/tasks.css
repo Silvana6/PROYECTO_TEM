@@ -1,0 +1,127 @@
+.title-t {
+    color: #4a4e69;
+    margin-left: 200px;
+    margin-top: 8px;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.container {
+    margin-left: 200px;
+    margin-right: 200px;
+    padding: 20px 100px;
+    border-radius: 10px;
+    border: 2px solid #9a8c98;
+}
+
+.new-form label {
+    color: #223843;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.title-detail input,
+.title-detail textarea,
+.date input {
+    background-color: #dbd3d8;
+    margin-bottom: 20px;
+    font-size: 15px;
+    border: 1px solid #eff1f3;
+    outline: none;
+}
+
+.title-detail input,
+.title-detail textarea{
+    padding: 10px;
+    margin-top: 5px;
+    width: 100%;
+    border-radius: 15px;
+}
+
+.date input {
+    width: 30%;
+    padding: 8px;
+    border-radius: 10px;
+    margin-left: 20px;
+}
+
+/*CHECKBOX DESACTIVADO*/
+.new-form .disabled-section {
+    opacity: 1;
+    /*pointer-events: auto;*/
+    border-top: 2px solid lightgray;
+    display: block;
+    margin: 20px 10%;
+    padding-top: 30px;
+    border-radius: 10px;
+    width: 80%;
+}
+
+.disabled-section label {
+    color: lightgray;
+    margin-left: 115px;;
+}
+
+.disabled-section input,
+.sect-esp input,
+.sect-esp select {
+    color: lightgray;
+    opacity: 1;
+    background-color: lightgray;
+    border: 1px solid lightgray;
+    font-size: 15px;
+    padding: 8px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+.disabled-section input{
+    width: 180px;
+    margin-top: 5px;
+}
+
+.sect-esp input {
+    width: 60px;
+}
+
+.sect-esp select {
+    width: 120px;
+}
+
+/*CHECKBOZ ACTIVADO*/
+.new-form .enabled-section {
+    border-top: 2px solid black;
+}
+
+.enabled-section label {
+    color: #223843;
+}
+
+.enabled-section input,
+.sect-esp input,
+.sect-esp select {
+    background-color: #dbd3d8;
+    border: 1px solid #eff1f3;
+}
+
+.new-btn button {
+    bottom: 8px;
+    background-color: #c9ada7;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    color: #223843;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    font-size: 25px;
+    font-weight: bold;
+    width: 40%;
+    text-align: center;
+    margin-left: 30%;
+}
+
+.new-btn button:hover {
+    background-color: #9a8c98;
+    color: #eff1f3;
+}

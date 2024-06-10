@@ -1,0 +1,107 @@
+.title-t {
+    color: #4a4e69;
+    margin-left: 200px;
+    margin-top: 8px;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.wrapper {
+    background-size: cover;
+    background-position: center;
+    margin-left: 35%;
+    margin-right: 35%;
+}
+
+.cpass-box {
+    position: relative;
+    width: 430px;
+    height: 430px;
+    margin-top: 50px;
+    padding: 20px 40px;
+    background: transparent;
+    border-radius: 15px;
+    border: 2px solid #72383d;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(15px);
+}
+
+.input-box {
+    position: relative;
+    width: 350px;
+    margin: 30px 0;
+    border-bottom: 1px solid #687a86;
+}
+
+.input-box label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: #322029;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.input-box input:not(:placeholder-shown) ~ label,
+.input-box input:focus ~ label,
+.input-box input:valid ~ label {
+    top: -5px;
+}
+
+.input-box input {
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    color: black;
+    padding: 0 35px 0 5px;
+}
+
+.input-box .icon {
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    color: #8496a2;
+    transform: translateY(-50%);
+}
+
+.cpass-btn {
+    display: flex;
+    justify-content: center;
+}
+.cpass-btn .btn-ok,
+.cpass-box .btn-cancel{
+    margin-top: 20px;
+    padding: 10px 20px;
+    border-radius: 6px;
+    transition: all 0.15s ease;
+    cursor: pointer;
+}
+
+.cpass-btn .btn-cancel {
+    order: 1;
+    color: black;
+    background: transparent;
+    margin-right: 20px;
+    border: 1px solid #4a4e69;
+}
+
+.cpass-btn .btn-ok {
+    order: 2;
+    color: #fff;
+    background: #72383d;
+}
+
+.btn-ok button:hover {
+    background-color: #d77a61;
+    transform: scale(0.1);
+}
+
+.btn-cancel button:hover {
+    background-color: #72383d;
+}

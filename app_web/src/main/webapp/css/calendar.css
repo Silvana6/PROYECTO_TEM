@@ -1,0 +1,304 @@
+.title-t {
+    color: #4a4e69;
+    margin-left: 200px;
+    margin-top: 8px;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+body {
+    justify-content: center;
+    align-items: center;
+    place-items: center;
+    background: transparent;
+    overflow: hidden;
+}
+
+.calendar {
+    font-size: 30px;
+    height: 33rem;
+    width: max-content;
+    border: 1px solid #22223b;
+    border-radius: 15px;
+    overflow: hidden;
+    padding: 5px 60px 0px 60px;/*trbl*/
+    margin: 100px 180px;
+    margin-top: 0;/**/
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #d77a61;
+    align-items: center;
+    font-weight: 700;
+    color: black;
+    padding: 10px;
+}
+
+.calendar-body {
+    padding: 10px 0px;
+}
+
+.calendar-week-days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    font-weight: 600;
+    cursor: pointer;
+    background-color: #d8b4a0;
+    border-radius: 12px;
+    padding-bottom: 15px;
+}
+
+.calendar-week-days div:hover {
+    color: #9a8c98;
+    transform: scale(1.2);
+    transition: all .2s ease-in-out;
+}
+
+.calendar-week-days div {
+    display: grid;
+    place-items: center;
+    color: #223843;
+    height: 45px;
+    padding: 10px 30px;
+}
+
+.calendar-days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    padding-left: 40px;
+    gap: 5px;
+    color: black;
+}
+
+.calendar-days div {
+    width: 70px;
+    height: 33px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px 5px 20px;
+    position: relative;
+    cursor: pointer;
+    animation: to-top 1s forwards;
+}
+
+.month-picker {
+    padding: 5px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.year-picker {
+    display: flex;
+    align-items: center;
+}
+
+.year-change {
+    height: 0;
+    width: 30px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    margin: 0;
+    margin-top: -30%;/**/
+    cursor: pointer;
+}
+
+.year-change:hover {
+    border-radius: 50%;
+    background-color: #d8b4a0;
+}
+
+.calendar-footer {
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#year:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+    transition: all 0.2 ease-in-out;
+}
+
+.calendar-days div span {
+    position: absolute;
+}
+
+.calendar-days div:hover {
+    transition: width 0.2s ease-in-out, height 0.2s ease-in-out;
+    background-color: #eff1f3;
+    border-radius: 20%;
+    color: black;
+}
+
+.calendar-days div.current-date {
+    color: black;
+    background-color: #dbd3d8;
+    border-radius: 20%;
+}
+
+.month-list {
+    position: relative;
+    left: 0;
+    top: -250px;
+    background-color: #4a4e69;
+    color: #eff1f3;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 3px;
+    border-radius: 20px;
+}
+
+.month-list>div {
+    display: grid;
+    place-content: center;
+    margin: 5px 10px;
+    transition: all 0.2s ease-in-out;
+}
+
+.month-list>div>div {
+    border-radius: 15px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.month-list>div>div:hover {
+    background-color: #9796f0;
+    color: #f8fbff;
+    transform: scale(0.9);
+    transition: all 0.2s ease-in-out;
+}
+
+.month-list.show {
+    visibility: visible;
+    pointer-events: visible;
+    transition: 0.6s ease-in-out;
+    animation: to-left .71s forwards;
+}
+
+.month-list.hideonce {
+    visibility: hidden;
+}
+
+.month-list.hide {
+    animation: to-right 1s forwards;
+    visibility: none;
+    pointer-events: none;
+}
+
+.date-time-formate {
+    height: 30px;
+    width: 100%;
+    font-family: Dubai Light, Century Gothic;
+    position: relative;
+    display: flex;
+    top: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.day-text-formate {
+    font-family: Microsoft JhengHei UI;
+    font-size: 50px;
+    padding-right: 5%;
+    border-right: 3px solid #d77a61;
+}
+
+.date-time-value {
+    display: block;
+    position: relative;
+    text-align: center;
+    padding-left: 5%;
+}
+
+.time-formate {
+    font-size: 1.5rem;
+}
+
+.time-formate.hideTime {
+    animation: hidetime 1.5s forwards;
+}
+
+.day-text-formate.hidetime {
+    animation: hidetime 1.5s forwards;
+}
+
+.date-formate.hideTime {
+    animation: hidetime 1.5s forwards;
+}
+
+.day-text-formate.showtime {
+    animation: showtime 1s forwards;
+}
+
+.time-formate.showtime {
+    animation: showtime 1s forwards;
+}
+
+.date-formate.showtime {
+    animation: showtime 1s forwards;
+}
+
+@keyframes to-top {
+    0% {
+        transform: translateY(0);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(100%);
+        opacity: 1;
+    }
+}
+
+@keyframes to-left {
+    0% {
+        transform: translatex(230%);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translatex(0);
+        opacity: 1;
+    }
+}
+
+@keyframes to-right {
+    10% {
+        transform: translatex(0);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translatex(-150%);
+        opacity: 1;
+    }
+}
+
+@keyframes showtime {
+    0% {
+        transform: translatex(250%);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translatex(0%);
+        opacity: 1;
+    }
+}
+
+@keyframes hidetime {
+    0% {
+        transform: translatex(0%);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translatex(-370%);
+        opacity: 1;
+    }
+}

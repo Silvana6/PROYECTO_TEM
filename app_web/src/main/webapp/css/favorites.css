@@ -1,0 +1,86 @@
+.title-t {
+    color: #4a4e69;
+    margin-left: 200px;
+    margin-top: 8px;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.container {
+    margin-left: 150px;
+    margin-right: 90px;
+    padding: 10px 10px;
+    border-radius: 10px;
+    border: 2px solid #9a8c98;
+}
+
+table {
+    width: 100%;
+    border-collapse: separate;
+    margin: 20px 0;
+    text-align: left;
+}
+
+thead th {
+    background-color: #c9ada7;
+    color: #22223b;
+    font-size: 15px;
+    text-align: center;
+    padding: 12px 0;
+}
+
+tbody td {
+    font-size: 12px;
+    border-bottom: 1px solid #22223b;
+    padding: 10px 15px;
+}
+
+.icon-edit-del,
+.icon-star {
+    text-align: center;
+}
+
+.edit,
+.del,
+.fav {
+    width: 30px;
+    height: 30px;
+    margin: -10px;
+    cursor: pointer;
+    transition: scale 0.2s ease;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.edit,
+.del {
+    padding: 2px;
+    border: 1px solid gray;
+}
+
+.edit {
+    background-color: #cde9da;
+}
+
+.del {
+    background-color: #f6b6c6;
+}
+
+.fav {
+    padding: -1px;
+    background-color: #faf295;
+}
+
+.edit:hover,
+.del:hover,
+.fav:hover {
+    scale: 1.1;
+}
+
+tbody tr {
+    background-color: transparent;
+}
+
+tbody tr:hover {
+    background-color: #e2cfc8;
+}

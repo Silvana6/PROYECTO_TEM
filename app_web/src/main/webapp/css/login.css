@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    background: #efe9e1;
+}
+
+h1 {
+    margin-top: 50px;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: #322029;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    margin: 40px;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: 400px;
+    border-radius: 500px;
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 200,
+        'GRAD' 0,
+        'opsz' 48;
+    margin-right: 30px;
+}
+
+.wrapper {
+    background-size: cover;
+    background-position: center;
+}
+
+.login-box {
+    position: relative;
+    width: 400px;
+    height: 450px;
+    background: #dbd3d8;
+    border-radius: 15px;
+    border: 2px solid #72383d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(15px);
+}
+
+.input-box {
+    position: relative;
+    width: 310px;
+    margin: 30px 0;
+    border-bottom: 1px solid #687a86;
+}
+
+.input-box label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: #322029;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.input-box input:focus ~ label,
+.input-box input:valid ~ label {
+    top: -5px;
+}
+
+.input-box input {
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    color: black;
+    padding: 0 35px 0 5px;
+}
+
+.input-box .icon {
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    color: #8496a2;
+    transform: translateY(-50%);
+}
+
+.remember-forgot {
+    margin: -15px 0 15px;
+    font-size: 0.9em;
+    color: #4a3b2f;
+    display: flex;
+    justify-content: space-between;
+}
+
+.remember-forgot label input {
+    margin-right: 3px;
+}
+
+.remember-forgot a {
+    color: blue;
+    text-decoration: none;
+}
+
+.remember-forgot a:hover {
+    text-decoration: underline;
+}
+
+.login-btn button {
+    color: #fff;
+    margin-top: 10px;
+    padding: 10px 100px;
+    border-radius: 6px;
+    background: #72383d;
+    transition: all 0.15s ease;
+}
+
+.login-btn button:active {
+    transform: scale(0.9);
+}
+
+.sign-link {
+    font-size: 0.9em;
+    color: #4a3b2f;
+    text-align: center;
+    margin: 25px 0 10px;
+}
+
+.sign-link p a {
+    color: #72383d;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.forgot-pass {
+    font-size: 0.9em;
+    text-align: center;
+    margin: 25px 0 10px;
+}
+
+.forgot-pass a {
+    text-decoration: none;
+    color: #72383d;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.forgot-pass a,
+.register-link p a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 500px) {
+    .login-box {
+        width: 100%;
+        height: 100vh;
+        border: none;
+        border-radius: 0;
+    }
+    .input-box {
+        width: 290px;
+    }
+}
