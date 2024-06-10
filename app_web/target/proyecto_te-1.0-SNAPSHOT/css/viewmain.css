@@ -1,0 +1,114 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.task-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #d77a61;
+    width: 90%;
+    margin-left: 110px;
+}
+
+.task-box {
+    width: 300px;
+    height: auto;
+    max-height: 300px;
+    min-height: 100px;
+    padding: 0;
+    margin: 10px 5px;
+    background-color: transparent;
+    position: relative;
+    transition: scale 0.2s ease;
+}
+
+.task-box:hover {
+    scale: 1.1;
+}
+
+.task {
+    background-color: #efe9e1;
+    border-radius: 12px;
+    box-shadow: 0 0 20px 0 #4a4e69;
+    padding: 12px;
+    margin-bottom: 15px;
+}
+
+.task-box .task h3 {
+    text-align: center;
+    color: #72383d;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.task .describe {
+    font-size: 15px;
+    color: black;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #d8b4a0;
+    margin-bottom: 8px;
+}
+
+.task .date {
+    text-align: right;
+    color: #9a8c98;
+    font-weight: bold;
+}
+
+.task-box .icons {
+    display: flex;
+    justify-content: space-around;
+}
+
+.task-box .icons i {
+    cursor: pointer;
+    transition: scale 0.2s ease;
+}
+
+.task-box .icons i:hover {
+    scale: 1.2;
+    background-color: #d77a61;
+    border-radius: 50%;
+}
+
+.task-box.removed {
+    background-color: #f2dede;
+    border-color: #ebccd1;
+    transform: translateY(100px);
+}
+
+.task-box.removed .icons {
+    display: none;
+}
+
+.task-box.removed .delete-icon {
+    display: block;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+/**/
+.task-container-complete {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    width: 90%;
+    margin-left: 110px;
+    transition: scale 0.2s ease;
+}
+
+.task-container-complete .task-box .task {
+    background-color: #d9d9d9;
+    transition: scale 0.2s ease;
+}
+
+.task-container-complete .task-box .task:hover {
+    scale: 1.1;
+}
+
+.task-container-complete .decribe2 {
+    margin-bottom: 10px;
+}
