@@ -1,0 +1,79 @@
+.window-background2 {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background-filter: blur(4px);
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+    overflow: hidden;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.window-container2 {
+    background-color: #d9d9d9;
+    position: relative;
+    max-width: 50%;
+    max-height: 90%;
+    padding: 1.5rem;
+    border-radius: 12px;
+    z-index: 10;
+    animation-name: modal2;
+    animation-duration: .5s;
+}
+
+.window-container2 h1, 
+.window-container2 p {
+    margin: 0;
+    margin-bottom: 1rem;
+}
+
+.window-container2 h1 {
+    color: #322029;
+    text-align: center;
+    font-weight: bold;
+}
+
+.window-container2 p {
+    color: black;
+}
+
+.window-container2 .note-box2 {
+    margin: 20px;
+    border: 1px solid #d77a61;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 13px;
+}
+
+@keyframes modal2 {
+    from {
+        transform: translateY(50vh);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+.close2 {
+    transition: transform 1s cubic-bezier(0, -0.42, 1, -0.41);
+    transform: translateY(60vh);
+}
+
+.btn-close2 {
+    position: absolute;
+    border-radius: 50%;
+    top: -15px;
+    right: -15px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    background-color: #d8b4a0;
+    cursor: pointer;
+}
