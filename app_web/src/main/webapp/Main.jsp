@@ -37,11 +37,6 @@
                         </div>
                     </li>
                     <li>
-                        <button type="button" aria-label="Notify" class="header-button">
-                            <img src="icons/notifications.svg" alt="N">
-                        </button>
-                    </li>
-                    <li>
                         <button type="button" aria-label="Sort" class="header-button">
                             <img src="icons/sortby.svg" alt="S">
                         </button>
