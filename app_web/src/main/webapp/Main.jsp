@@ -10,6 +10,8 @@
         <title>Inicio</title>
         <link rel="stylesheet"  href="css/main.css">
         <link rel="stylesheet"  href="css/viewmain.css">
+        <link rel="stylesheet" href="css/viewtask.css"/>
+        <link rel="stylesheet" href="css/viewtaskdelete.css"/>
     </head>
 
     <style>
@@ -107,7 +109,7 @@
 
         <div class="task-container">
             <div class="task-box" id="task-1">
-                <div class="task">
+                <div class="task open-modal">
                     <h3>Tarea 1</h3><!-- Titulo -->
                     <p class="describe">Axxxxxxxxxx xxxxx xxxxxx xxx xxxxxxx xxxxxxx xxxxxxxxxxxxx xxxxx xxxxxx xxxxxxxxxxxxx xxx xxxxxxxxx xxxxxxxxx xxxxxx xxxxxxxx xxxx xxxxx xxxxxxxx xxsbcdef ghi jklmnop qr stuv wxyz, abcd efghij kl mnopqrst uv wx yzabcd.</p><!-- Tarea -->
                     <p class="date">12/07/2024</p><!-- Fecha limite -->
@@ -120,8 +122,9 @@
                     <i class="delete-icon"><img src="icons/delete.svg" alt="🗑"/>️️</i><!-- onclick = "return(confirm('¿Esta segur@ de eliminar esta tarea?'))" -->
                 </div>
             </div>
+
             <div class="task-box" id="task-2">
-                <div class="task">
+                <div class="task open-modal">
                     <h3>Tarea 2</h3><!-- Titulo -->
                     <p class="describe">Abcdef ghi jklmnop qr stuv wxyz, abcd efghij kl mnopqrst uv wx yzabcd.</p><!-- Tarea -->
                     <p class="date">12/07/2024</p><!-- Fecha limite -->
@@ -136,10 +139,32 @@
             </div>
             <!-- Más tareas pueden ser añadidas aquí -->
         </div>
-        
+
+        <!-- MODAL VER TAREA COMPLETA -->
+        <div class="window-background" id="window-background">
+            <div class="window-container" id="window-container">
+                <button class="btn-close" id="btn-close"><img src="icons/close.svg" alt="X"/></button>
+                <h1>Titulo</h1>
+                <p>Descripcion</p>
+                <p class="note-box">Nota</p>
+                <p class="limite">Fecha limite</p>
+                <!-- SI TIENE RECORDATORIO -->
+                <div class="detalle-a">
+                    <div class="avanzado">
+                        <h3>RECORDATORIO</h3>
+                        <p>Veces a repetir: VAR</p>
+                        <p>Cada cuanto: VAR</p>
+                        <p>Hora: VAR</p>
+                        <p>Fecha inicio: VAR</p>
+                        <p>Fecha final: VAR</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <div class="task-container-complete">
             <div class="task-box" id="task-3">
-                <div class="task">
+                <div class="task open-modalD">
                     <h3>Tarea 3</h3><!-- Titulo -->
                     <p class="decribe2">Abcdef ghi jklmnop qr stuv wxyz, abcd efghij kl mnopqrst uv wx yzabcd.</p><!-- Tarea -->
                 </div>
@@ -148,6 +173,14 @@
                 </div>
             </div>
             <!-- Más tareas pueden ser añadidas aquí -->
+        </div>
+        <div class="window-background2" id="window-background2">
+            <div class="window-container2" id="window-container2">
+                <button class="btn-close2" id="btn-close2"><img src="icons/close.svg" alt="X"/></button>
+                <h1>Titulo</h1>
+                <p>Descripcion</p>
+                <p class="note-box2">Nota</p>
+            </div>
         </div>
 
         <div class="btns-pom-new">
@@ -174,11 +207,7 @@
             window.location.href = "Pomodoro.jsp";
         }
     </script>
-    <!--
-        <script type="module">
-            import { Application } from '@splinetool/runtime';
-            const canvas = document.getElementById('canvas3d');
-            const app = new Application(canvas);
-            app.load('https://prod.spline.design/nNthtPmaCbO62jKp/scene.splinecode');
-        </script><link rel="stylesheet" href="./style.css">-->
+
+    <script src="js/modal.js"></script>
+    <script src="js/modal2.js"></script>
 </html>
