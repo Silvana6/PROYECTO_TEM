@@ -45,38 +45,43 @@
     margin-left: 20px;
 }
 
-/*CHECKBOX DESACTIVADO*/
-.new-form .disabled-section {
-    opacity: 1;
-    /*pointer-events: auto;*/
-    border-top: 2px solid lightgray;
+/*CHECKBOX ACTIVADO*/
+.new-form .settings-section {
+    pointer-events: auto;
+    border-top: 2px solid black;
     display: block;
     margin: 20px 10%;
-    padding-top: 30px;
+    padding: 25px 40px;
     border-radius: 10px;
     width: 80%;
+    background-color: transparent;
 }
 
-.disabled-section label {
-    color: lightgray;
-    margin-left: 115px;;
+.sect-esp span {
+    color: #22223b;
+    font-weight: bold;
+    margin-left: 20px;
 }
 
-.disabled-section input,
+.settings-section label {
+    color: #223843;
+}
+
+.settings-section input,
 .sect-esp input,
 .sect-esp select {
-    color: lightgray;
-    opacity: 1;
-    background-color: lightgray;
-    border: 1px solid lightgray;
+    color: black;
+    background-color: #dbd3d8;
+    border: 1px solid #eff1f3;
     font-size: 15px;
     padding: 8px;
     border-radius: 10px;
     margin-bottom: 20px;
     margin-left: 20px;
+    outline: none;
 }
 
-.disabled-section input{
+.settings-section input{
     width: 180px;
     margin-top: 5px;
 }
@@ -86,23 +91,7 @@
 }
 
 .sect-esp select {
-    width: 120px;
-}
-
-/*CHECKBOZ ACTIVADO*/
-.new-form .enabled-section {
-    border-top: 2px solid black;
-}
-
-.enabled-section label {
-    color: #223843;
-}
-
-.enabled-section input,
-.sect-esp input,
-.sect-esp select {
-    background-color: #dbd3d8;
-    border: 1px solid #eff1f3;
+    width: 150px;
 }
 
 .new-btn button {

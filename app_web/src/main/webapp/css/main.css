@@ -10,7 +10,7 @@
 
 body {
     height: 200vh;/*tamaño pagina*/
-    background: #efe9e1;
+    background: var(--background-color, #efe9e1); /* usa una variable CSS */
     padding: 8px;
     font-family: Poppins, sans-serif;
     position: relative;
